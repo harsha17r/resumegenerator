@@ -1,0 +1,282 @@
+/* ================================
+   RESUME STYLING - Resume.lol inspired
+   ================================ */
+/* GLOBAL BODY STYLES */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 40px 60px;
+  max-width: 1000px;
+  line-height: 1.4;
+}
+
+/* ================================
+   HEADER SECTION - Name and Contact
+   ================================ */
+
+/* Main Name/Title (H1) */
+h1 {
+  color: #2563eb;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.2px;
+}
+
+/* Contact line - Phone and Email (left side) */
+h1 + p {
+  float: left;
+  width: 70%;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Phone number styling */
+h1 + p strong {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Email link styling */
+h1 + p a {
+  color: #2563eb;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+h1 + p a:hover {
+  text-decoration: underline;
+}
+
+/* Additional contact info - Location and links (right side) */
+h1 + p + p {
+  float: right;
+  width: 28%;
+  margin: -39px 0 25px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Links in contact section */
+h1 + p + p a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+h1 + p + p a:hover {
+  text-decoration: underline;
+}
+
+/* Clear floats before Experience section */
+h1 + p + p + h2 {
+  clear: both;
+  margin-top: 15px;
+}
+
+/* ================================
+   SECTION HEADERS (EXPERIENCE, EDUCATION, etc.)
+   ================================ */
+h2 {
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   EXPERIENCE SECTION - Job Entries
+   ================================ */
+
+/* Line 1: Company Name ←→ Location (flexbox with space-between) */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 0 0;
+}
+
+/* Company name styling (left side) */
+.company {
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Location styling (right side) */
+.location {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Line 2: Job Role ←→ Duration (flexbox with space-between) */
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+}
+
+/* Job role styling (left side, italic) */
+.role {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Job duration styling (right side, italic) */
+.duration {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ================================
+   BULLET POINTS & ACHIEVEMENT LISTS
+   ================================ */
+
+/* Job Achievement Lists - Main container */
+ul.achievements {
+  margin: 0 0 10px 0;
+  padding-left: 20px;
+  list-style-type: disc; /* Change to 'circle', 'square', or 'none' */
+}
+
+/* Individual Bullet Points - Each achievement */
+ul.achievements li {
+  margin-bottom: 0px;
+  line-height: 1.3;
+  color: #000000;
+  font-size: 14px; /* Bullet text size */
+  letter-spacing: -0.1px;
+  text-align: justify;
+  padding-left: 0px;
+}
+
+/* Bullet Point Marker Styling */
+ul.achievements li::marker {
+  color: #222222; /* Bullet color - change this to customize bullet color */
+  font-size: 1.1em; /* Bullet size - make bigger/smaller */
+}
+
+/* First bullet point in each job (if you want different styling) */
+ul.achievements li:first-child {
+  /* Add any special styling for first bullet here */
+}
+
+/* Last bullet point in each job (if you want different styling) */
+ul.achievements li:last-child {
+  margin-bottom: 0; /* Remove extra space after last bullet */
+}
+
+/* Ensure proper spacing between job sections */
+.job-details + ul.achievements {
+  margin-top: 8px;
+}
+
+/* Keyword highlight within achievements */
+ul.achievements .kw {
+  font-weight: 400; /* Adjust weight as desired */
+  color: #000000;   /* Adjust color as desired */
+}
+
+/* ================================
+   GENERAL LINKS STYLING
+   ================================ */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   EDUCATION SECTION
+   ================================ */
+
+/* Line 1: University Name ←→ Duration (flexbox with space-between) */
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+/* University name styling (left side) */
+.university {
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Education duration styling (right side) */
+.edu-duration {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Line 2: Degree Type & Course ←→ GPA (flexbox with space-between) */
+.edu-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+
+/* Degree and course styling (left side, italic) */
+.degree {
+  font-style: italic;
+  color: #666;
+  font-size: 15px;
+}
+
+/* GPA styling (right side, italic) */
+.gpa {
+  font-style: italic;
+  color: #666;
+  font-size: 15px;
+}
+
+/* ================================
+   SKILLS SECTIONS
+   ================================ */
+
+/* Skills section paragraphs */
+h2 + p {
+  margin: 8px 0;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* Skills section styling */
+h2 + p strong {
+  color: #333;
+  font-weight: 500;
+}
+
+/* ================================
+   MOBILE RESPONSIVENESS
+   ================================ */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 30px;
+  }
+ 
+  .header-row {
+    display: block;
+  }
+ 
+  .name-cell, .contact-cell {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+ 
+  .name-cell h1 {
+    font-size: 2.2em;
+    margin-bott
